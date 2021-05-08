@@ -1,0 +1,82 @@
+$font-size: 1rem;
+
+html {
+  font-size: $font-size;
+  font-family: Monsetatt;
+}
+body{
+  margin: 0;
+  color: #060505;
+}
+.page-app{
+  display: flex;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  .page-app-block{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h1{
+    font-size: 29px;
+  }
+  .first-section{
+    width: 70%;
+    &__buttons{
+      button{
+        background-color: #ffffff;
+        border: 1px solid #060505;
+        border-radius: 5px;
+        padding: 10px 40px;
+        box-shadow: -4px 4px 11px 1px #b1b1b1;
+        font-size: 16px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: box-shadow 0.5s;
+        &:hover{
+          box-shadow: -4px 4px 11px 1px #d2b8e400;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    .navigation-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .points{
+        &__field{
+          width: 50px;
+          height: 50px;
+          background-color: white;
+        }
+      }
+      .timer{
+        &__field{
+          width: 50px;
+          height: 50px;
+          background-color: white;
+        }
+      }
+    }
+    .main-field{
+      margin-top: 50px;
+      height: 520px;
+      width: 100%;
+      background: white;
+      position: relative;
+      .square-item{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .second-section{
+    width: 30%;
+  }
+}
